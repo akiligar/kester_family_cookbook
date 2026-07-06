@@ -12,7 +12,8 @@ Use this full metadata block for new recipes.
 title: Recipe Name
 status: draft | testing | approved | archived
 version: 0.1.0
-category: dinner | side | sauce | breakfast | work-box | dessert | staple
+category: main-dish | side-dish | sauce | breakfast | work-box | dessert | staple
+protein: beef | chicken | pork | seafood | turkey | vegetarian | mixed | none
 rotation_role: weeknight-dinner | weekend-dinner | work-box | side | sauce | breakfast | company | holiday | staple
 season: spring | summer | fall | winter | all-season
 source: Kester family rotation
@@ -74,7 +75,8 @@ Every recipe should include these fields:
 title: Recipe Name
 status: draft | testing | approved | archived
 version: 0.1.0
-category: dinner | side | sauce | breakfast | work-box | dessert | staple
+category: main-dish | side-dish | sauce | breakfast | work-box | dessert | staple
+protein: beef | chicken | pork | seafood | turkey | vegetarian | mixed | none
 rotation_role: weeknight-dinner | weekend-dinner | work-box | side | sauce | breakfast | company | holiday | staple
 season: spring | summer | fall | winter | all-season
 created: YYYY-MM-DD
@@ -120,6 +122,39 @@ Use semantic-style recipe versions.
 - Use `1.0.0` when a recipe is first approved.
 - Increment the version when the ingredients, timing, method, transformation plan, or work-box notes meaningfully change.
 - Minor wording edits do not need a version change unless they affect cooking, AnyList import clarity, or transformation reliability.
+
+### `category`
+
+Use category for the recipe's primary cookbook location.
+
+Preferred categories:
+
+- `main-dish`
+- `side-dish`
+- `sauce`
+- `breakfast`
+- `work-box`
+- `dessert`
+- `staple`
+
+Avoid using both `dinner` and `main-dish`. Main Dishes is the standard category for dinner entrees.
+
+### `protein`
+
+Architecture 1.3 uses protein metadata to make Main Dishes easier to browse.
+
+Use one of these values:
+
+- `beef`
+- `chicken`
+- `pork`
+- `seafood`
+- `turkey`
+- `vegetarian`
+- `mixed`
+- `none`
+
+For side dishes, sauces, staples, and recipes without a central protein, use `none` unless another value is genuinely useful for discovery.
 
 ### `rotation_role`
 
@@ -240,7 +275,8 @@ For rough drafts, this smaller block is acceptable:
 title: Recipe Name
 status: draft
 version: 0.1.0
-category: dinner
+category: main-dish
+protein: chicken
 rotation_role: weeknight-dinner
 season: all-season
 created: YYYY-MM-DD
