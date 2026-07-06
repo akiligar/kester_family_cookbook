@@ -32,17 +32,23 @@ nav:
           - recipes/main-dishes/index.md
           - Beef:
               - Grilled Flank Steak with Chimichurri: recipes/main-dishes/grilled-flank-steak-chimichurri.md
+              - Smash Burgers: recipes/main-dishes/smash-burgers.md
           - Chicken:
-              - recipes/main-dishes/index.md#chicken
+              - BBQ Chicken Stuffed Sweet Potatoes: recipes/main-dishes/bbq-chicken-stuffed-sweet-potatoes.md
+              - Blackstone Chicken Fajitas: recipes/main-dishes/blackstone-chicken-fajitas.md
+              - Lemon Garlic Chicken Thighs: recipes/main-dishes/lemon-garlic-chicken-thighs.md
+              - Sheet Pan Dijon Chicken: recipes/main-dishes/sheet-pan-dijon-chicken.md
+          - Seafood:
+              - Lemon Shrimp Orzo: recipes/main-dishes/lemon-shrimp-orzo.md
           - Pork:
               - recipes/main-dishes/index.md#pork
-          - Seafood:
-              - recipes/main-dishes/index.md#seafood
           - Turkey:
               - recipes/main-dishes/index.md#turkey
           - Vegetarian:
               - recipes/main-dishes/index.md#vegetarian
-      - Side Dishes: recipes/sides/index.md
+      - Side Dishes:
+          - recipes/sides/index.md
+          - Blackstone Zucchini: recipes/sides/blackstone-zucchini.md
       - Sauces: recipes/sauces/index.md
       - Breakfast:
           - recipes/breakfast/index.md
