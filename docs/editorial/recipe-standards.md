@@ -7,6 +7,7 @@ Every permanent recipe should answer these questions:
 - What makes the Kester version different from a generic version?
 - What parts can be prepped ahead?
 - How does it become leftovers, lunches, or 2:00 AM work meals?
+- Does it cook clearly from the format used in the kitchen, especially AnyList?
 - What should not be changed because it matters?
 
 ## Preferred Recipe Structure
@@ -21,9 +22,10 @@ Every permanent recipe should answer these questions:
 8. Method
 9. Make-Ahead Notes
 10. Leftovers / Work Box Notes
-11. Variations
-12. What Matters
-13. Revision Notes
+11. Cooking Feedback
+12. Variations
+13. What Matters
+14. Revision Notes
 
 ## Approval Checklist
 
@@ -36,10 +38,23 @@ Before a recipe becomes approved, it should meet these standards:
 - Leftover and work-box usefulness is documented.
 - The recipe includes only realistic variations.
 - The recipe is better than keeping a generic outside version.
+- The recipe has been cooked successfully from the version the family will actually use in the kitchen, preferably AnyList.
+
+## AnyList Readiness
+
+A recipe does not need to be approved before it enters AnyList. In many cases, AnyList is part of testing.
+
+Before importing into AnyList, the recipe should have:
+
+- Clean ingredients.
+- Clear step order.
+- Reasonable timing.
+- Minimal editorial clutter.
+- A working published URL if importing from the site.
 
 ## Editorial Rule
 
-A recipe should not become permanent just because it was cooked once. It should become permanent because it earned a place in the family rotation.
+A recipe should not become permanent just because it was cooked once. It should become permanent because it earned a place in the family rotation and works in the tools the family actually uses.
 
 ## Quality Bias
 
