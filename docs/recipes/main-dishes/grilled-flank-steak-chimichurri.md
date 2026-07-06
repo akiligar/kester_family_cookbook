@@ -24,7 +24,7 @@ anylist:
   imported_version:
   list_name: Kester Family Cookbook
   recipe_name: Grilled Flank Steak with Chimichurri
-  notes: Added Schema.org Recipe microdata after AnyList import failed.
+  notes: Version included in Schema.org description for AnyList reference.
 
 servings: 4
 prep_time: 00:20
@@ -67,7 +67,7 @@ tags:
 
 # <span itemprop="name">Grilled Flank Steak with Chimichurri</span>
 
-<span itemprop="description">A simple summer grilling recipe with tender sliced flank steak and bright chimichurri. This dinner is designed to become Chimichurri Steak Salad for a work-box meal.</span>
+<span itemprop="description">A simple summer grilling recipe with tender sliced flank steak and bright chimichurri. This dinner is designed to become Chimichurri Steak Salad for a work-box meal. Version: 0.3.0.</span>
 
 <meta itemprop="recipeCategory" content="Main dish">
 <meta itemprop="recipeCuisine" content="American">
@@ -216,6 +216,7 @@ Current status: testing
 
 - 2026-07-06: Initial AnyList import failed. Recipe was restructured to make Ingredients and Instructions more conventional and import-friendly.
 - 2026-07-06: Added Schema.org Recipe microdata for AnyList import testing.
+- 2026-07-06: Added version to the AnyList-visible recipe description.
 
 ## Transformation Feedback
 
@@ -232,5 +233,6 @@ Current status: testing
 - 2026-07-06: Initial recipe added.
 - 2026-07-06: Restructured for AnyList import compatibility and Architecture 1.2 transformation workflow.
 - 2026-07-06: Added Schema.org Recipe microdata.
+- 2026-07-06: Added current version to the Schema.org description for AnyList reference.
 
 </article>
