@@ -15,7 +15,7 @@ The Kester Family Cookbook is now a GitHub-backed MkDocs cookbook published at:
 
 <https://cookbook.connellkesters.com/>
 
-Current architecture version: **Architecture 1.2**
+Current architecture version: **Architecture 1.3**
 
 Current working model:
 
@@ -34,6 +34,18 @@ GitHub cookbook revision
 ```
 
 GitHub remains the source of truth. The website is the published reference. AnyList is the kitchen cooking tool.
+
+Current guidance structure:
+
+- **Family Preferences**: how the family likes to eat.
+- **Editorial Standards**: how cookbook content is written and organized.
+- **Project Playbook**: how the project operates.
+
+Current recipe discovery model:
+
+- Main Dishes are grouped by protein.
+- Category index pages should help browse recipes, not act as placeholders.
+- Recipe metadata should support browsing and planning.
 
 ## Architecture History
 
@@ -87,7 +99,44 @@ Where to look:
 - [Recipe Template](recipe-template.md)
 - [Metadata Standard](metadata-standard.md)
 
+### Architecture 1.3 — Organization and Discovery
+
+Improved how recipes and editorial guidance are found and maintained.
+
+Key concepts:
+
+- Main Dishes are grouped by protein.
+- Recipe category pages should become discovery pages.
+- `protein` metadata supports browsing and weekly planning.
+- Permanent guidance is separated into Family Preferences, Editorial Standards, and Project Playbook.
+- Import-facing recipe content stays near the top of recipes; editorial content stays below the cooking instructions.
+
+Where to look:
+
+- [Main Dishes](../recipes/main-dishes/index.md)
+- [Family Preferences](family-preferences.md)
+- [Recipe Metadata Standard](metadata-standard.md)
+- [Recipe Template](recipe-template.md)
+
 ## 2026-07-06
+
+### Implemented Architecture 1.3
+
+Added organization and discovery improvements so the cookbook is easier to browse and maintain as it grows.
+
+Changed:
+
+- Added `protein` metadata to the recipe standard.
+- Added `protein` metadata to the recipe template.
+- Updated Grilled Flank Steak with Chimichurri with `protein: beef`.
+- Rebuilt the Main Dishes index as a protein-based discovery page.
+- Grouped Main Dishes by protein in the site navigation.
+- Reorganized the Editorial sidebar into Family Preferences, Editorial Standards, and Project Playbook.
+- Updated the Editorial landing page to explain where long-term decisions belong.
+
+Why it matters:
+
+The planning chat can now import the rest of the week's recipes using a clearer template and navigation structure. The cookbook is also easier to browse by how people actually plan meals.
 
 ### Implemented Architecture 1.2
 
