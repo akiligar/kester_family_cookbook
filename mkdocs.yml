@@ -47,6 +47,7 @@ nav:
       - Recipe Lifecycle: editorial/recipe-lifecycle.md
       - Metadata Standard: editorial/metadata-standard.md
       - Rotation Workflow: editorial/rotation-to-recipe-workflow.md
+      - AnyList Sync Workflow: editorial/anylist-sync-workflow.md
       - Change Log: editorial/change-log.md
   - Reference:
       - reference/index.md
