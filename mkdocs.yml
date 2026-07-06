@@ -44,8 +44,14 @@ nav:
       - editorial/index.md
       - Recipe Standards: editorial/recipe-standards.md
       - Recipe Template: editorial/recipe-template.md
+      - Recipe Lifecycle: editorial/recipe-lifecycle.md
+      - Metadata Standard: editorial/metadata-standard.md
+      - Rotation Workflow: editorial/rotation-to-recipe-workflow.md
       - Change Log: editorial/change-log.md
   - Reference:
       - reference/index.md
       - Pantry Staples: reference/pantry-staples.md
       - Equipment: reference/equipment.md
+      - Seasonal Index: reference/seasonal-index.md
+      - Ingredient Index: reference/ingredient-index.md
+      - Work Box Index: reference/work-box-index.md
