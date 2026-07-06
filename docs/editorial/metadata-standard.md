@@ -11,6 +11,7 @@ Use this full metadata block for new recipes.
 ```yaml
 title: Recipe Name
 status: draft | testing | approved | archived
+version: 0.1.0
 category: dinner | side | sauce | breakfast | work-box | dessert | staple
 rotation_role: weeknight-dinner | weekend-dinner | work-box | side | sauce | breakfast | company | holiday | staple
 season: spring | summer | fall | winter | all-season
@@ -20,7 +21,20 @@ created: YYYY-MM-DD
 last_tested: YYYY-MM-DD
 approved: false
 approved_date:
-anylist: false
+
+website:
+  published: false
+  published_date:
+  canonical_url:
+
+anylist:
+  ready: false
+  imported: false
+  imported_date:
+  imported_version:
+  list_name: Kester Family Cookbook
+  recipe_name:
+  notes:
 
 servings: 4
 prep_time: 00:00
@@ -51,13 +65,21 @@ Every recipe should include these fields:
 ```yaml
 title: Recipe Name
 status: draft | testing | approved | archived
+version: 0.1.0
 category: dinner | side | sauce | breakfast | work-box | dessert | staple
 rotation_role: weeknight-dinner | weekend-dinner | work-box | side | sauce | breakfast | company | holiday | staple
 season: spring | summer | fall | winter | all-season
 created: YYYY-MM-DD
 last_tested: YYYY-MM-DD
 approved: false
-anylist: false
+website:
+  published: false
+anylist:
+  ready: false
+  imported: false
+  imported_date:
+  imported_version:
+  list_name: Kester Family Cookbook
 servings: 4
 prep_time: 00:00
 cook_time: 00:00
@@ -79,6 +101,15 @@ Use one of these values:
 - `testing`: Cooked or scheduled in a rotation, still being evaluated.
 - `approved`: Permanent family cookbook recipe.
 - `archived`: Retired from active use.
+
+### `version`
+
+Use semantic-style recipe versions.
+
+- Start drafts at `0.1.0`.
+- Use `1.0.0` when a recipe is first approved.
+- Increment the version when the ingredients, timing, method, or work-box notes meaningfully change.
+- Minor wording edits do not need a version change unless they affect cooking or AnyList import clarity.
 
 ### `rotation_role`
 
@@ -102,9 +133,35 @@ Use the season when the family actually wants to cook the recipe.
 
 A tomato-heavy pasta may technically be possible all year, but if it only makes sense with summer tomatoes, mark it `summer`.
 
+### `website`
+
+The website block tracks whether the recipe has been published from GitHub to the cookbook site.
+
+Use `website.published: true` only after the recipe is visible on the published cookbook site.
+
 ### `anylist`
 
-Use `anylist: true` only when the recipe is clean enough to import from the published site. Draft notes, testing clutter, and ambiguous ingredients should be cleaned up first.
+The AnyList block tracks whether the published recipe has been imported into AnyList.
+
+Use these rules:
+
+- `ready: true` means the recipe is clean enough to import.
+- `imported: true` means it has been imported into AnyList.
+- `imported_version` records the recipe version that was imported.
+- If `version` is newer than `imported_version`, the recipe needs to be re-imported.
+- `recipe_name` should match the name used inside AnyList if it differs from the cookbook title.
+- `notes` can record manual details, such as duplicate cleanup or import quirks.
+
+A recipe is current in AnyList only when:
+
+```yaml
+version: 1.2.0
+anylist:
+  imported: true
+  imported_version: 1.2.0
+```
+
+If the versions differ, GitHub is newer than AnyList.
 
 ### `primary_ingredients`
 
@@ -152,12 +209,17 @@ For rough drafts, this smaller block is acceptable:
 ```yaml
 title: Recipe Name
 status: draft
+version: 0.1.0
 category: dinner
 rotation_role: weeknight-dinner
 season: all-season
 created: YYYY-MM-DD
 approved: false
-anylist: false
+website:
+  published: false
+anylist:
+  ready: false
+  imported: false
 servings: 4
 effort: medium
 work_box: untested
