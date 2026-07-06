@@ -3,6 +3,7 @@ title: Grilled Flank Steak with Chimichurri
 status: testing
 version: 0.3.0
 category: main-dish
+protein: beef
 rotation_role: weeknight-dinner
 season: summer
 source: Kester family rotation
@@ -234,5 +235,6 @@ Current status: testing
 - 2026-07-06: Restructured for AnyList import compatibility and Architecture 1.2 transformation workflow.
 - 2026-07-06: Added Schema.org Recipe microdata.
 - 2026-07-06: Added current version to the Schema.org description for AnyList reference.
+- 2026-07-06: Added protein metadata for Architecture 1.3 recipe discovery.
 
 </article>
