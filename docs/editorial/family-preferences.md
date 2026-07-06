@@ -1,68 +1,76 @@
 # Family Preferences
 
-This document records long-term editorial decisions about how the Kester family actually cooks and eats. It is not a list of rules for individual recipes. Instead, it provides context so future recipes reflect family preferences rather than generic cookbook assumptions.
+This document records long-term preferences that shape every recipe in the Kester Family Cookbook.
+
+These are editorial decisions, not hard rules. When developing or revising recipes, favor these preferences unless there is a compelling reason to do otherwise.
 
 ## Purpose
 
-Use this document whenever creating or revising recipes.
-
-Before adding a new recipe, ask:
+Use this document whenever creating or revising recipes. Ask:
 
 - Does it match how the family actually cooks?
 - Does it fit family tastes?
-- Does it assume the equipment we own?
+- Does it assume equipment we own?
 - Does it support work boxes or planned transformations when appropriate?
 
-## Flavor Preferences
+## Vegetables
 
 ### Tomatoes
 
-- Avoid fresh tomatoes as a featured ingredient.
-- Cooked tomatoes are preferred.
+- Do **not** feature fresh tomatoes as a primary ingredient.
+- Cooked tomatoes are preferred and welcome in sauces, soups, chilis, and similar dishes.
+- Seasonal planning should avoid recipes that depend on fresh tomatoes.
 
-### Spice Level
+## Proteins
 
-- Record preferred spice level here.
+Current emphasis:
 
-## Protein Preferences
+- Beef
+- Chicken
+- Pork
+- Seafood
 
-- Preferred proteins:
-- Proteins to avoid:
+## Spice Level
 
-## Vegetable Preferences
+- Aim for mild to medium heat.
+- Make heat adjustable when practical.
+- Avoid making the base recipe excessively spicy.
 
-- Favorite vegetables:
-- Vegetables used occasionally:
-- Vegetables to avoid:
+## Work-Box Meals
 
-## Pantry Standards
+Because of the family work schedule:
 
-Record preferred brands, substitutions, and pantry assumptions.
+- Favor meals that reheat well.
+- Favor planned dinner-to-transformation recipes.
+- Cold work-box meals are encouraged when they travel better.
 
-Examples:
+## Cooking Style
 
-- Preferred mayonnaise
-- Preferred barbecue sauce
-- Jarred minced garlic is acceptable
-- Standard cooking oils
-- Common seasoning blends
+Prefer recipes that are:
+
+- Practical on weeknights.
+- Repeatable.
+- Worth adding to the permanent rotation.
+- Easy to scale for leftovers.
 
 ## Equipment Assumptions
 
 Recipes may assume access to:
 
 - Pellet smoker
+- Blackstone griddle
 - Cast iron cookware
 - Instant Pot
+- Outdoor grill
+- Instant-read thermometer
 
-Add equipment as it becomes part of the normal kitchen.
+## Pantry Philosophy
 
-## Meal Planning Preferences
-
-- Favor recipes that create good leftovers or planned transformations.
-- Work-box friendly meals are valuable.
-- Recipes should reflect real family cooking rather than restaurant presentation.
+- Prefer commonly stocked pantry ingredients.
+- Jarred minced garlic is acceptable.
+- Avoid unnecessary specialty ingredients.
+- Favor ingredients reused across multiple recipes.
 
 ## Editorial Principle
 
-If this document conflicts with a generic recipe, prefer this document. The goal is to preserve how the Kester family actually cooks, not how recipes are traditionally written.
+When there is a choice between a traditional recipe and one that better reflects how the Kester family actually cooks, choose the version that reflects the family's real habits.
