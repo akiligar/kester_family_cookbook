@@ -1,17 +1,27 @@
 # Recipe Template
 
-Use this template for recipes that may enter the permanent cookbook.
+This is the canonical template for recipes in the Kester Family Cookbook.
 
-Recipes must work in two formats:
+Use it when creating new recipes for GitHub, the published cookbook site, and AnyList import.
 
-1. The published cookbook website.
-2. AnyList import and cooking.
+A recipe must work in two ways:
 
-For import reliability, keep the visible recipe structure simple and conventional near the top of the page: title, summary, servings/time, ingredients, and instructions. Put editorial notes after the cooking instructions.
+1. As a clean cooking document for AnyList.
+2. As a living cookbook record with testing notes, transformation notes, and revision history.
 
-Recipe pages should use Schema.org `Recipe` microdata. Schema.org defines `Recipe` as a recipe type and includes import-relevant properties such as `prepTime`, `cookTime`, `totalTime`, `recipeYield`, `recipeIngredient`, and `recipeInstructions`.
+To protect AnyList import, the top of the visible recipe should stay simple and conventional:
 
-The visible recipe description should include the current recipe version so AnyList imports show which cookbook revision was imported.
+```text
+Title
+Description
+Servings and Time
+Ingredients
+Instructions
+```
+
+Editorial content belongs after the cooking instructions.
+
+## Copy/Paste Template
 
 ```markdown
 ---
@@ -20,12 +30,12 @@ status: draft | testing | approved | archived
 version: 0.1.0
 category: main-dish | side-dish | sauce | breakfast | work-box | dessert | staple
 protein: beef | chicken | pork | seafood | turkey | vegetarian | mixed | none
-rotation_role: weeknight-dinner | weekend-dinner | work-box | side | sauce | breakfast | company | holiday | staple
+rotation_role: weeknight-dinner | weekend-dinner | work-box | side-dish | sauce | breakfast | company | holiday | staple
 season: spring | summer | fall | winter | all-season
 source: Kester family rotation
 source_url:
 created: YYYY-MM-DD
-last_tested: YYYY-MM-DD
+last_tested:
 approved: false
 approved_date:
 
@@ -58,7 +68,7 @@ kid_friendly: yes | no | mixed | untested
 transformation:
   has_transformation: false
   transformation_name:
-  transformation_type: cold | handheld | bowl | soup | reheated | breakfast | salad | other
+  transformation_type: cold | handheld | bowl | soup | reheated | breakfast | salad | mixed | other
   transformation_timing: next-day | same-night | work-box | planned-leftover
   transformation_url:
   work_box_friendly: false
@@ -68,7 +78,6 @@ primary_ingredients:
 equipment:
   - equipment item
 tags:
-  - weeknight
   - testing
 ---
 
@@ -79,22 +88,21 @@ tags:
 <span itemprop="description">Brief one- or two-sentence recipe summary. Version: 0.1.0.</span>
 
 <meta itemprop="recipeCategory" content="Main dish">
+<meta itemprop="recipeCuisine" content="American">
 <meta itemprop="prepTime" content="PT00M">
 <meta itemprop="cookTime" content="PT00M">
 <meta itemprop="totalTime" content="PT00M">
 <meta itemprop="recipeYield" content="4 servings">
-<meta itemprop="keywords" content="weeknight, testing">
+<meta itemprop="keywords" content="testing">
 
 ## Servings and Time
 
 - Servings: <span itemprop="recipeYield">4</span>
-- Prep time: 00:00
-- Cook time: 00:00
-- Total time: 00:00
+- Prep time: 00 minutes
+- Cook time: 00 minutes
+- Total time: about 00 minutes
 
 ## Ingredients
-
-Keep this section clean. Avoid editorial notes, testing notes, and optional commentary.
 
 ### Main Component
 
@@ -107,8 +115,6 @@ Keep this section clean. Avoid editorial notes, testing notes, and optional comm
 - <span itemprop="recipeIngredient">Ingredient 2</span>
 
 ## Instructions
-
-Keep this section cookable. Avoid long explanations that interfere with AnyList timers and step parsing.
 
 ### Prepare
 
@@ -132,7 +138,7 @@ Keep this section cookable. Avoid long explanations that interfere with AnyList 
 
 ## Planned Transformation
 
-A transformation is not a leftover note. It is the planned second meal this recipe is designed to become.
+Use this section only when the dinner is intentionally designed to become a second meal. If there is no planned transformation, write: None.
 
 ### Transformation Meal
 
@@ -145,23 +151,24 @@ Name the next meal and explain why the dinner was designed to become it.
 
 ### Before Leaving for Work
 
-List what should be sliced, packed, portioned, chilled, or held separately before work.
+1. Pack, slice, portion, chill, or separate ingredients as needed.
+2. Keep sauces, greens, crunchy toppings, and reheated items separate when appropriate.
 
 ### At Work / At 2:00 AM
 
-Explain how to assemble, reheat, dress, or eat the transformation meal.
+1. Assemble, reheat, dress, or eat the transformation meal.
 
 ## Make-Ahead Notes
 
-What can be done earlier?
+- Note what can be prepared earlier.
+- Note what should not be prepared too early.
 
 ## Storage and Leftovers
 
-What usable leftovers does this create? If it does not work well as leftovers, say so.
+- Note how to store leftovers.
+- Note whether leftovers are good, limited, or not useful.
 
 ## AnyList Cooking Notes
-
-When this recipe is imported into AnyList, update the metadata block above.
 
 Suggested note to include inside AnyList:
 
@@ -171,7 +178,7 @@ Version: 0.1.0
 URL: https://cookbook.connellkesters.com/path-to-recipe/
 ```
 
-After cooking from AnyList, capture what worked or failed in the Cooking Feedback section below.
+After importing into AnyList, update the `anylist` metadata block above.
 
 ## Why This Recipe Belongs
 
@@ -208,20 +215,57 @@ List details that should not be changed because they affect the result.
 </article>
 ```
 
-## Import Compatibility Rules
+## Required AnyList Import Structure
 
 For AnyList and similar recipe import tools:
 
-- Use `# Recipe Name` as the visible recipe title.
-- Wrap the recipe body in `<article itemscope itemtype="https://schema.org/Recipe" markdown="1">`.
-- Mark the visible title with `itemprop="name"`.
-- Mark the summary with `itemprop="description"`.
-- Include `Version: x.y.z.` inside the visible description so AnyList imports carry the cookbook revision.
-- Use ISO 8601 duration values in metadata tags for `prepTime`, `cookTime`, and `totalTime`.
-- Use `## Ingredients` for the ingredient list.
-- Mark each ingredient with `itemprop="recipeIngredient"`.
-- Use `## Instructions` for cooking steps.
-- Mark each cooking step with `itemprop="recipeInstructions"` and `https://schema.org/HowToStep`.
-- Put ingredients before instructions.
-- Keep editorial notes after the cooking instructions.
-- Avoid putting testing status, family notes, or workflow notes between the title and the ingredients.
+- Use one visible `#` title.
+- Wrap the visible recipe body in `<article itemscope itemtype="https://schema.org/Recipe" markdown="1">`.
+- Mark the title with `itemprop="name"`.
+- Mark the description with `itemprop="description"`.
+- Include `Version: x.y.z.` inside the visible description.
+- Use `## Ingredients` before `## Instructions`.
+- Mark every ingredient with `itemprop="recipeIngredient"`.
+- Mark every cooking step with `itemprop="recipeInstructions"` and `https://schema.org/HowToStep`.
+- Keep testing notes, family notes, revision notes, and editorial explanations after the cooking instructions.
+
+## Version Rule
+
+Every recipe has two visible version references:
+
+1. YAML metadata:
+
+```yaml
+version: 0.1.0
+```
+
+2. AnyList-visible description:
+
+```text
+Version: 0.1.0.
+```
+
+These must match. If the recipe version changes, update both places.
+
+## Category and Protein Rules
+
+Use `main-dish` for dinner entrees. Do not use `dinner` as a category.
+
+Use `side-dish` for sides. Do not use `side` as a category.
+
+For `protein`, use one of:
+
+```text
+beef | chicken | pork | seafood | turkey | vegetarian | mixed | none
+```
+
+Use `none` for side dishes, sauces, staples, and recipes without a central protein.
+
+## Planned Transformation Rule
+
+A transformation is not a leftover note.
+
+- Leftovers are what remains.
+- A planned transformation is the second meal the dinner is intentionally designed to become.
+
+Only set `transformation.has_transformation: true` when the second meal is intentionally planned and documented.
