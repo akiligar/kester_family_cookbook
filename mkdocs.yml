@@ -1,0 +1,51 @@
+site_name: Kester Family Cookbook
+site_description: Permanent family cookbook and meal planning reference for the Kester household.
+site_url: https://YOUR-CLOUDFLARE-PAGES-URL/
+repo_url: https://github.com/YOUR-GITHUB-USERNAME/kester-family-cookbook
+repo_name: kester-family-cookbook
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Recipes:
+      - recipes/index.md
+      - Dinners:
+          - recipes/dinners/index.md
+      - Work Boxes:
+          - recipes/work-boxes/index.md
+      - Breakfast:
+          - recipes/breakfast/index.md
+      - Sides: recipes/sides/index.md
+      - Sauces: recipes/sauces/index.md
+  - Planning:
+      - planning/index.md
+      - Seasonal Planning: planning/seasonal-planning.md
+      - Rotation Review: planning/rotation-review.md
+  - Editorial:
+      - editorial/index.md
+      - Recipe Standards: editorial/recipe-standards.md
+      - Recipe Template: editorial/recipe-template.md
+      - Change Log: editorial/change-log.md
+  - Reference:
+      - reference/index.md
+      - Pantry Staples: reference/pantry-staples.md
+      - Equipment: reference/equipment.md
