@@ -19,6 +19,7 @@ title: Recipe Name
 status: draft | testing | approved | archived
 version: 0.1.0
 category: main-dish | side-dish | sauce | breakfast | work-box | dessert | staple
+protein: beef | chicken | pork | seafood | turkey | vegetarian | mixed | none
 rotation_role: weeknight-dinner | weekend-dinner | work-box | side | sauce | breakfast | company | holiday | staple
 season: spring | summer | fall | winter | all-season
 source: Kester family rotation
