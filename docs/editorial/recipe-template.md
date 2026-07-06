@@ -2,12 +2,19 @@
 
 Use this template for recipes that may enter the permanent cookbook.
 
+Recipes must work in two formats:
+
+1. The published cookbook website.
+2. AnyList import and cooking.
+
+For import reliability, keep the visible recipe structure simple and conventional near the top of the page: title, summary, servings/time, ingredients, and instructions. Put editorial notes after the cooking instructions.
+
 ```markdown
 ---
 title: Recipe Name
 status: draft | testing | approved | archived
 version: 0.1.0
-category: dinner | side | sauce | breakfast | work-box | dessert | staple
+category: main-dish | side-dish | sauce | breakfast | work-box | dessert | staple
 rotation_role: weeknight-dinner | weekend-dinner | work-box | side | sauce | breakfast | company | holiday | staple
 season: spring | summer | fall | winter | all-season
 source: Kester family rotation
@@ -62,19 +69,75 @@ tags:
 
 # Recipe Name
 
-## Why This Recipe Belongs
+Brief one- or two-sentence recipe summary.
 
-Briefly explain why this recipe deserves a place in the family cookbook. For drafts and testing recipes, explain what role it might fill.
+## Servings and Time
 
-## Status
+- Servings: 4
+- Prep time: 00:00
+- Cook time: 00:00
+- Total time: 00:00
 
-Current status: draft | testing | approved | archived
+## Ingredients
 
-Testing notes:
+Keep this section clean. Avoid editorial notes, testing notes, and optional commentary.
 
-- Date tested:
-- Result:
-- Next adjustment:
+### Main Component
+
+- Ingredient 1
+- Ingredient 2
+
+### Sauce / Dressing / Secondary Component
+
+- Ingredient 1
+- Ingredient 2
+
+## Instructions
+
+Keep this section cookable. Avoid long explanations that interfere with AnyList timers and step parsing.
+
+### Prepare
+
+1. Step one.
+2. Step two.
+
+### Cook
+
+1. Step one.
+2. Step two.
+
+### Serve
+
+1. Step one.
+
+## Planned Transformation
+
+A transformation is not a leftover note. It is the planned second meal this recipe is designed to become.
+
+### Transformation Meal
+
+Name the next meal and explain why the dinner was designed to become it.
+
+### Additional Ingredients
+
+- Ingredient 1
+- Ingredient 2
+
+### Before Leaving for Work
+
+List what should be sliced, packed, portioned, chilled, or held separately before work.
+
+### At Work / At 2:00 AM
+
+Explain how to assemble, reheat, dress, or eat the transformation meal.
+
+## Make-Ahead Notes
+
+What can be done earlier?
+
+## Storage and Leftovers
+
+What usable leftovers does this create? If it does not work well as leftovers, say so.
 
 ## AnyList Cooking Notes
 
@@ -90,57 +153,25 @@ URL: https://cookbook.connellkesters.com/path-to-recipe/
 
 After cooking from AnyList, capture what worked or failed in the Cooking Feedback section below.
 
-## Servings
+## Why This Recipe Belongs
 
-Serves 4.
+Briefly explain why this recipe deserves a place in the family cookbook. For drafts and testing recipes, explain what role it might fill.
 
-## Time
+## Status and Testing Notes
 
-- Prep:
-- Cook:
-- Total:
+Current status: draft | testing | approved | archived
 
-## Ingredients
-
-- Ingredient 1
-- Ingredient 2
-
-## Method
-
-1. Step one.
-2. Step two.
-
-## Make-Ahead Notes
-
-What can be done earlier?
-
-## Leftovers / Work Box Notes
-
-What usable leftovers does this create? If it does not work well as leftovers, say so.
-
-## Planned Transformation
-
-A transformation is not a leftover note. It is the planned second meal this recipe is designed to become.
-
-### Transformation Meal
-
-Name the next meal and explain why the dinner was designed to become it.
-
-### Before Leaving for Work
-
-List what should be sliced, packed, portioned, chilled, or held separately before work.
-
-### At Work / At 2:00 AM
-
-Explain how to assemble, reheat, dress, or eat the transformation meal.
-
-### Transformation Feedback
-
-- YYYY-MM-DD: Note whether the transformation worked, what was missing, and what should change next time.
+- Date tested:
+- Result:
+- Next adjustment:
 
 ## Cooking Feedback
 
 - YYYY-MM-DD: Cooked from planned recipe / website / AnyList. Note what worked, what was confusing, and what should change next time.
+
+## Transformation Feedback
+
+- YYYY-MM-DD: Note whether the transformation worked, what was missing, and what should change next time.
 
 ## Variations
 
@@ -154,3 +185,16 @@ List details that should not be changed because they affect the result.
 
 - YYYY-MM-DD: Initial version.
 ```
+
+## Import Compatibility Rules
+
+For AnyList and similar recipe import tools:
+
+- Use `# Recipe Name` as the visible recipe title.
+- Use `## Ingredients` for the ingredient list.
+- Use `## Instructions` for cooking steps.
+- Put ingredients before instructions.
+- Keep editorial notes after the cooking instructions.
+- Avoid putting testing status, family notes, or workflow notes between the title and the ingredients.
+- Use ordinary ingredient bullets and numbered instruction steps.
+- Prefer `Servings and Time` over a complex recipe-information table.
