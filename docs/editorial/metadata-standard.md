@@ -48,6 +48,14 @@ leftover_quality: poor | okay | good | excellent
 freezer_friendly: yes | no | untested
 kid_friendly: yes | no | mixed | untested
 
+transformation:
+  has_transformation: false
+  transformation_name:
+  transformation_type: cold | handheld | bowl | soup | reheated | breakfast | salad | other
+  transformation_timing: next-day | same-night | work-box | planned-leftover
+  transformation_url:
+  work_box_friendly: false
+
 primary_ingredients:
   - ingredient
 equipment:
@@ -87,6 +95,8 @@ total_time: 00:00
 effort: low | medium | high
 work_box: yes | no | with-modification
 leftover_quality: poor | okay | good | excellent
+transformation:
+  has_transformation: false
 tags:
   - tag
 ```
@@ -108,8 +118,8 @@ Use semantic-style recipe versions.
 
 - Start drafts at `0.1.0`.
 - Use `1.0.0` when a recipe is first approved.
-- Increment the version when the ingredients, timing, method, or work-box notes meaningfully change.
-- Minor wording edits do not need a version change unless they affect cooking or AnyList import clarity.
+- Increment the version when the ingredients, timing, method, transformation plan, or work-box notes meaningfully change.
+- Minor wording edits do not need a version change unless they affect cooking, AnyList import clarity, or transformation reliability.
 
 ### `rotation_role`
 
@@ -163,6 +173,25 @@ anylist:
 
 If the versions differ, GitHub is newer than AnyList.
 
+### `transformation`
+
+Architecture 1.2 treats dinner-to-transformation recipes as first-class recipe systems.
+
+Use `transformation.has_transformation: true` when a dinner is intentionally designed to become another meal.
+
+A transformation is not the same as leftovers:
+
+- Leftovers are what remains after dinner.
+- Transformations are planned second meals created from the first meal.
+
+Use these fields to describe the planned second meal:
+
+- `transformation_name`: the name of the next meal, such as `Chimichurri Steak Salad`.
+- `transformation_type`: the form of the next meal, such as `cold`, `handheld`, `bowl`, `soup`, `reheated`, `breakfast`, `salad`, or `other`.
+- `transformation_timing`: when the transformation is used, such as `next-day`, `same-night`, `work-box`, or `planned-leftover`.
+- `transformation_url`: link to a separate transformation recipe if it exists.
+- `work_box_friendly`: whether the transformation is useful for work boxes or 2:00 AM meals.
+
 ### `primary_ingredients`
 
 Use this for planning and waste reduction. Do not list every pantry item. Focus on ingredients that drive shopping decisions.
@@ -195,6 +224,7 @@ Good tags:
 - `uses-leftover-chicken`
 - `graveyard-shift`
 - `kid-friendly`
+- `planned-transformation`
 
 Avoid vague tags:
 
@@ -224,6 +254,8 @@ servings: 4
 effort: medium
 work_box: untested
 leftover_quality: untested
+transformation:
+  has_transformation: false
 tags:
   - testing
 ```
