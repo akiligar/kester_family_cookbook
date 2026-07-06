@@ -11,6 +11,8 @@ For import reliability, keep the visible recipe structure simple and conventiona
 
 Recipe pages should use Schema.org `Recipe` microdata. Schema.org defines `Recipe` as a recipe type and includes import-relevant properties such as `prepTime`, `cookTime`, `totalTime`, `recipeYield`, `recipeIngredient`, and `recipeInstructions`.
 
+The visible recipe description should include the current recipe version so AnyList imports show which cookbook revision was imported.
+
 ```markdown
 ---
 title: Recipe Name
@@ -73,7 +75,7 @@ tags:
 
 # <span itemprop="name">Recipe Name</span>
 
-<span itemprop="description">Brief one- or two-sentence recipe summary.</span>
+<span itemprop="description">Brief one- or two-sentence recipe summary. Version: 0.1.0.</span>
 
 <meta itemprop="recipeCategory" content="Main dish">
 <meta itemprop="prepTime" content="PT00M">
@@ -213,6 +215,7 @@ For AnyList and similar recipe import tools:
 - Wrap the recipe body in `<article itemscope itemtype="https://schema.org/Recipe" markdown="1">`.
 - Mark the visible title with `itemprop="name"`.
 - Mark the summary with `itemprop="description"`.
+- Include `Version: x.y.z.` inside the visible description so AnyList imports carry the cookbook revision.
 - Use ISO 8601 duration values in metadata tags for `prepTime`, `cookTime`, and `totalTime`.
 - Use `## Ingredients` for the ingredient list.
 - Mark each ingredient with `itemprop="recipeIngredient"`.
