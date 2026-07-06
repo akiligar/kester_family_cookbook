@@ -43,6 +43,14 @@ leftover_quality: poor | okay | good | excellent
 freezer_friendly: yes | no | untested
 kid_friendly: yes | no | mixed | untested
 
+transformation:
+  has_transformation: false
+  transformation_name:
+  transformation_type: cold | handheld | bowl | soup | reheated | breakfast | salad | other
+  transformation_timing: next-day | same-night | work-box | planned-leftover
+  transformation_url:
+  work_box_friendly: false
+
 primary_ingredients:
   - ingredient
 equipment:
@@ -108,7 +116,27 @@ What can be done earlier?
 
 ## Leftovers / Work Box Notes
 
-How should this become lunch, leftovers, or a 2:00 AM meal? If it does not work well that way, say so.
+What usable leftovers does this create? If it does not work well as leftovers, say so.
+
+## Planned Transformation
+
+A transformation is not a leftover note. It is the planned second meal this recipe is designed to become.
+
+### Transformation Meal
+
+Name the next meal and explain why the dinner was designed to become it.
+
+### Before Leaving for Work
+
+List what should be sliced, packed, portioned, chilled, or held separately before work.
+
+### At Work / At 2:00 AM
+
+Explain how to assemble, reheat, dress, or eat the transformation meal.
+
+### Transformation Feedback
+
+- YYYY-MM-DD: Note whether the transformation worked, what was missing, and what should change next time.
 
 ## Cooking Feedback
 
