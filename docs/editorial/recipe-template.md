@@ -9,6 +9,8 @@ Recipes must work in two formats:
 
 For import reliability, keep the visible recipe structure simple and conventional near the top of the page: title, summary, servings/time, ingredients, and instructions. Put editorial notes after the cooking instructions.
 
+Recipe pages should use Schema.org `Recipe` microdata. Schema.org defines `Recipe` as a recipe type and includes import-relevant properties such as `prepTime`, `cookTime`, `totalTime`, `recipeYield`, `recipeIngredient`, and `recipeInstructions`.
+
 ```markdown
 ---
 title: Recipe Name
@@ -67,13 +69,22 @@ tags:
   - testing
 ---
 
-# Recipe Name
+<article itemscope itemtype="https://schema.org/Recipe" markdown="1">
 
-Brief one- or two-sentence recipe summary.
+# <span itemprop="name">Recipe Name</span>
+
+<span itemprop="description">Brief one- or two-sentence recipe summary.</span>
+
+<meta itemprop="recipeCategory" content="Main dish">
+<meta itemprop="prepTime" content="PT00M">
+<meta itemprop="cookTime" content="PT00M">
+<meta itemprop="totalTime" content="PT00M">
+<meta itemprop="recipeYield" content="4 servings">
+<meta itemprop="keywords" content="weeknight, testing">
 
 ## Servings and Time
 
-- Servings: 4
+- Servings: <span itemprop="recipeYield">4</span>
 - Prep time: 00:00
 - Cook time: 00:00
 - Total time: 00:00
@@ -84,13 +95,13 @@ Keep this section clean. Avoid editorial notes, testing notes, and optional comm
 
 ### Main Component
 
-- Ingredient 1
-- Ingredient 2
+- <span itemprop="recipeIngredient">Ingredient 1</span>
+- <span itemprop="recipeIngredient">Ingredient 2</span>
 
 ### Sauce / Dressing / Secondary Component
 
-- Ingredient 1
-- Ingredient 2
+- <span itemprop="recipeIngredient">Ingredient 1</span>
+- <span itemprop="recipeIngredient">Ingredient 2</span>
 
 ## Instructions
 
@@ -98,17 +109,23 @@ Keep this section cookable. Avoid long explanations that interfere with AnyList 
 
 ### Prepare
 
-1. Step one.
-2. Step two.
+<ol>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Step one.</span></li>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Step two.</span></li>
+</ol>
 
 ### Cook
 
-1. Step one.
-2. Step two.
+<ol>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Step one.</span></li>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Step two.</span></li>
+</ol>
 
 ### Serve
 
-1. Step one.
+<ol>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Step one.</span></li>
+</ol>
 
 ## Planned Transformation
 
@@ -184,6 +201,8 @@ List details that should not be changed because they affect the result.
 ## Revision Notes
 
 - YYYY-MM-DD: Initial version.
+
+</article>
 ```
 
 ## Import Compatibility Rules
@@ -191,10 +210,14 @@ List details that should not be changed because they affect the result.
 For AnyList and similar recipe import tools:
 
 - Use `# Recipe Name` as the visible recipe title.
+- Wrap the recipe body in `<article itemscope itemtype="https://schema.org/Recipe" markdown="1">`.
+- Mark the visible title with `itemprop="name"`.
+- Mark the summary with `itemprop="description"`.
+- Use ISO 8601 duration values in metadata tags for `prepTime`, `cookTime`, and `totalTime`.
 - Use `## Ingredients` for the ingredient list.
+- Mark each ingredient with `itemprop="recipeIngredient"`.
 - Use `## Instructions` for cooking steps.
+- Mark each cooking step with `itemprop="recipeInstructions"` and `https://schema.org/HowToStep`.
 - Put ingredients before instructions.
 - Keep editorial notes after the cooking instructions.
 - Avoid putting testing status, family notes, or workflow notes between the title and the ingredients.
-- Use ordinary ingredient bullets and numbered instruction steps.
-- Prefer `Servings and Time` over a complex recipe-information table.
