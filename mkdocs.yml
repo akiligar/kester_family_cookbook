@@ -1,8 +1,8 @@
 site_name: Kester Family Cookbook
 site_description: Permanent family cookbook and meal planning reference for the Kester household.
 site_url: https://YOUR-CLOUDFLARE-PAGES-URL/
-repo_url: https://github.com/YOUR-GITHUB-USERNAME/kester-family-cookbook
-repo_name: kester-family-cookbook
+repo_url: https://github.com/akiligar/kester_family_cookbook
+repo_name: akiligar/kester_family_cookbook
 
 theme:
   name: material
