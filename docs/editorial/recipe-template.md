@@ -68,7 +68,7 @@ Testing notes:
 - Result:
 - Next adjustment:
 
-## AnyList Sync Notes
+## AnyList Cooking Notes
 
 When this recipe is imported into AnyList, update the metadata block above.
 
@@ -79,6 +79,8 @@ Source: Kester Family Cookbook
 Version: 0.1.0
 URL: https://cookbook.connellkesters.com/path-to-recipe/
 ```
+
+After cooking from AnyList, capture what worked or failed in the Cooking Feedback section below.
 
 ## Servings
 
@@ -107,6 +109,10 @@ What can be done earlier?
 ## Leftovers / Work Box Notes
 
 How should this become lunch, leftovers, or a 2:00 AM meal? If it does not work well that way, say so.
+
+## Cooking Feedback
+
+- YYYY-MM-DD: Cooked from planned recipe / website / AnyList. Note what worked, what was confusing, and what should change next time.
 
 ## Variations
 
