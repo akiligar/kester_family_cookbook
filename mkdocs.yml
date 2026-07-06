@@ -31,14 +31,12 @@ nav:
       - Main Dishes:
           - recipes/main-dishes/index.md
           - Grilled Flank Steak with Chimichurri: recipes/main-dishes/grilled-flank-steak-chimichurri.md
-      - Dinners:
-          - recipes/dinners/index.md
-      - Work Boxes:
-          - recipes/work-boxes/index.md
+      - Side Dishes: recipes/sides/index.md
+      - Sauces: recipes/sauces/index.md
       - Breakfast:
           - recipes/breakfast/index.md
-      - Sides: recipes/sides/index.md
-      - Sauces: recipes/sauces/index.md
+      - Work Boxes:
+          - recipes/work-boxes/index.md
   - Planning:
       - planning/index.md
       - Seasonal Planning: planning/seasonal-planning.md
