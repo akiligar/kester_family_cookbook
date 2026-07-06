@@ -10,10 +10,19 @@ Some main dishes are meal systems, where dinner intentionally becomes a second m
 
 - [Grilled Flank Steak with Chimichurri](grilled-flank-steak-chimichurri.md)  
   Summer grill recipe with chimichurri and a planned Chimichurri Steak Salad transformation.
+- [Smash Burgers](smash-burgers.md)  
+  Blackstone smash burgers designed to become a Burger Bowl work-box meal.
 
 ## Chicken
 
-_No chicken main dishes added yet._
+- [BBQ Chicken Stuffed Sweet Potatoes](bbq-chicken-stuffed-sweet-potatoes.md)  
+  BBQ chicken and sweet potatoes designed to become a reheated work-box bowl.
+- [Blackstone Chicken Fajitas](blackstone-chicken-fajitas.md)  
+  Chicken fajitas designed to become Fajita Taco Salad for work.
+- [Lemon Garlic Chicken Thighs](lemon-garlic-chicken-thighs.md)  
+  Lemon garlic chicken thighs designed to become Mediterranean Chicken Wraps.
+- [Sheet Pan Dijon Chicken](sheet-pan-dijon-chicken.md)  
+  Low-effort sheet pan chicken designed to become Dijon Chicken Wraps.
 
 ## Pork
 
@@ -21,7 +30,8 @@ _No pork main dishes added yet._
 
 ## Seafood
 
-_No seafood main dishes added yet._
+- [Lemon Shrimp Orzo](lemon-shrimp-orzo.md)  
+  Lemon shrimp orzo designed to become a chilled work-box pasta salad.
 
 ## Turkey
 
