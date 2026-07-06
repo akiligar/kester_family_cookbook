@@ -1,7 +1,7 @@
 ---
 title: Grilled Flank Steak with Chimichurri
 status: testing
-version: 0.2.0
+version: 0.3.0
 category: main-dish
 rotation_role: weeknight-dinner
 season: summer
@@ -24,7 +24,7 @@ anylist:
   imported_version:
   list_name: Kester Family Cookbook
   recipe_name: Grilled Flank Steak with Chimichurri
-  notes: Restructured for import after initial AnyList import failed.
+  notes: Added Schema.org Recipe microdata after AnyList import failed.
 
 servings: 4
 prep_time: 00:20
@@ -63,13 +63,23 @@ tags:
   - work-box-friendly
 ---
 
-# Grilled Flank Steak with Chimichurri
+<article itemscope itemtype="https://schema.org/Recipe" markdown="1">
 
-A simple summer grilling recipe with tender sliced flank steak and bright chimichurri. This dinner is designed to become Chimichurri Steak Salad for a work-box meal.
+# <span itemprop="name">Grilled Flank Steak with Chimichurri</span>
+
+<span itemprop="description">A simple summer grilling recipe with tender sliced flank steak and bright chimichurri. This dinner is designed to become Chimichurri Steak Salad for a work-box meal.</span>
+
+<meta itemprop="recipeCategory" content="Main dish">
+<meta itemprop="recipeCuisine" content="American">
+<meta itemprop="prepTime" content="PT20M">
+<meta itemprop="cookTime" content="PT12M">
+<meta itemprop="totalTime" content="PT45M">
+<meta itemprop="recipeYield" content="4 servings, plus leftovers for 2 to 4 lunches">
+<meta itemprop="keywords" content="grill, beef, summer, planned transformation, work-box friendly">
 
 ## Servings and Time
 
-- Servings: 4, plus leftovers for 2 to 4 lunches
+- Servings: <span itemprop="recipeYield">4, plus leftovers for 2 to 4 lunches</span>
 - Prep time: 20 minutes
 - Cook time: 12 minutes
 - Total time: about 45 minutes
@@ -78,22 +88,22 @@ A simple summer grilling recipe with tender sliced flank steak and bright chimic
 
 ### Steak
 
-- 1 1/2 to 2 lb flank steak
-- 1 tbsp olive oil
-- 1 tsp kosher salt
-- 1 tsp black pepper
-- 1 tsp garlic powder
+- <span itemprop="recipeIngredient">1 1/2 to 2 lb flank steak</span>
+- <span itemprop="recipeIngredient">1 tbsp olive oil</span>
+- <span itemprop="recipeIngredient">1 tsp kosher salt</span>
+- <span itemprop="recipeIngredient">1 tsp black pepper</span>
+- <span itemprop="recipeIngredient">1 tsp garlic powder</span>
 
 ### Chimichurri
 
-- 1 cup finely chopped parsley
-- 1/4 cup finely chopped cilantro, optional
-- 3 tbsp red wine vinegar
-- 1/2 cup olive oil
-- 2 tbsp jarred minced garlic
-- 1 tsp dried oregano
-- 1/2 tsp crushed red pepper flakes
-- Salt and pepper, to taste
+- <span itemprop="recipeIngredient">1 cup finely chopped parsley</span>
+- <span itemprop="recipeIngredient">1/4 cup finely chopped cilantro, optional</span>
+- <span itemprop="recipeIngredient">3 tbsp red wine vinegar</span>
+- <span itemprop="recipeIngredient">1/2 cup olive oil</span>
+- <span itemprop="recipeIngredient">2 tbsp jarred minced garlic</span>
+- <span itemprop="recipeIngredient">1 tsp dried oregano</span>
+- <span itemprop="recipeIngredient">1/2 tsp crushed red pepper flakes</span>
+- <span itemprop="recipeIngredient">Salt and pepper, to taste</span>
 
 ### Suggested Sides
 
@@ -104,29 +114,37 @@ A simple summer grilling recipe with tender sliced flank steak and bright chimic
 
 ### Prepare the Chimichurri
 
-1. Combine the parsley, cilantro, red wine vinegar, olive oil, minced garlic, oregano, and crushed red pepper flakes.
-2. Season with salt and pepper to taste.
-3. Stir well and let rest for at least 20 minutes.
+<ol>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Combine the parsley, cilantro, red wine vinegar, olive oil, minced garlic, oregano, and crushed red pepper flakes.</span></li>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Season with salt and pepper to taste.</span></li>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Stir well and let rest for at least 20 minutes.</span></li>
+</ol>
 
 ### Prepare the Steak
 
-1. Remove the steak from the refrigerator 20 to 30 minutes before grilling.
-2. Pat the steak dry.
-3. Rub the steak with olive oil.
-4. Season both sides with kosher salt, black pepper, and garlic powder.
+<ol>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Remove the steak from the refrigerator 20 to 30 minutes before grilling.</span></li>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Pat the steak dry.</span></li>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Rub the steak with olive oil.</span></li>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Season both sides with kosher salt, black pepper, and garlic powder.</span></li>
+</ol>
 
 ### Grill
 
-1. Preheat the grill to medium-high heat.
-2. Grill the steak for 4 to 6 minutes per side.
-3. Cook to 130 to 135°F for medium-rare or 135 to 145°F for medium.
-4. Rest the steak for 10 minutes.
-5. Slice thinly against the grain.
+<ol>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Preheat the grill to medium-high heat.</span></li>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Grill the steak for 4 to 6 minutes per side.</span></li>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Cook to 130 to 135°F for medium-rare or 135 to 145°F for medium.</span></li>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Rest the steak for 10 minutes.</span></li>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Slice thinly against the grain.</span></li>
+</ol>
 
 ### Serve
 
-1. Serve with grilled asparagus, corn on the cob, and generous spoonfuls of chimichurri.
-2. Reserve enough steak and chimichurri for Chimichurri Steak Salad.
+<ol>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Serve with grilled asparagus, corn on the cob, and generous spoonfuls of chimichurri.</span></li>
+<li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep"><span itemprop="text">Reserve enough steak and chimichurri for Chimichurri Steak Salad.</span></li>
+</ol>
 
 ## Planned Transformation
 
@@ -178,7 +196,7 @@ Suggested note to include inside AnyList:
 
 ```text
 Source: Kester Family Cookbook
-Version: 0.2.0
+Version: 0.3.0
 URL: https://cookbook.connellkesters.com/recipes/main-dishes/grilled-flank-steak-chimichurri/
 ```
 
@@ -197,6 +215,7 @@ Current status: testing
 ## Cooking Feedback
 
 - 2026-07-06: Initial AnyList import failed. Recipe was restructured to make Ingredients and Instructions more conventional and import-friendly.
+- 2026-07-06: Added Schema.org Recipe microdata for AnyList import testing.
 
 ## Transformation Feedback
 
@@ -212,3 +231,6 @@ Current status: testing
 
 - 2026-07-06: Initial recipe added.
 - 2026-07-06: Restructured for AnyList import compatibility and Architecture 1.2 transformation workflow.
+- 2026-07-06: Added Schema.org Recipe microdata.
+
+</article>
