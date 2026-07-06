@@ -150,7 +150,7 @@ This dinner is designed to become Chilled Lemon Shrimp Orzo Salad for a cold wor
 
 ### At Work / At 2:00 AM
 
-1. Eat cold.
+1. Do not reheat.
 2. Squeeze fresh lemon over the top.
 3. Add Parmesan.
 4. Toss gently.
