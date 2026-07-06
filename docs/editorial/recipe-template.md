@@ -6,6 +6,7 @@ Use this template for recipes that may enter the permanent cookbook.
 ---
 title: Recipe Name
 status: draft | testing | approved | archived
+version: 0.1.0
 category: dinner | side | sauce | breakfast | work-box | dessert | staple
 rotation_role: weeknight-dinner | weekend-dinner | work-box | side | sauce | breakfast | company | holiday | staple
 season: spring | summer | fall | winter | all-season
@@ -15,7 +16,20 @@ created: YYYY-MM-DD
 last_tested: YYYY-MM-DD
 approved: false
 approved_date:
-anylist: false
+
+website:
+  published: false
+  published_date:
+  canonical_url:
+
+anylist:
+  ready: false
+  imported: false
+  imported_date:
+  imported_version:
+  list_name: Kester Family Cookbook
+  recipe_name:
+  notes:
 
 servings: 4
 prep_time: 00:00
@@ -53,6 +67,18 @@ Testing notes:
 - Date tested:
 - Result:
 - Next adjustment:
+
+## AnyList Sync Notes
+
+When this recipe is imported into AnyList, update the metadata block above.
+
+Suggested note to include inside AnyList:
+
+```text
+Source: Kester Family Cookbook
+Version: 0.1.0
+URL: https://cookbook.connellkesters.com/path-to-recipe/
+```
 
 ## Servings
 
