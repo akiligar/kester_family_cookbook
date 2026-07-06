@@ -7,18 +7,35 @@ Use this template for recipes that may enter the permanent cookbook.
 title: Recipe Name
 status: draft | testing | approved | archived
 category: dinner | side | sauce | breakfast | work-box | dessert | staple
+rotation_role: weeknight-dinner | weekend-dinner | work-box | side | sauce | breakfast | company | holiday | staple
 season: spring | summer | fall | winter | all-season
 source: Kester family rotation
+source_url:
 created: YYYY-MM-DD
 last_tested: YYYY-MM-DD
 approved: false
+approved_date:
 anylist: false
+
+servings: 4
+prep_time: 00:00
+cook_time: 00:00
+total_time: 00:00
+effort: low | medium | high
+make_ahead: yes | no | partial
+
+work_box: yes | no | with-modification
+leftover_quality: poor | okay | good | excellent
+freezer_friendly: yes | no | untested
+kid_friendly: yes | no | mixed | untested
+
+primary_ingredients:
+  - ingredient
+equipment:
+  - equipment item
 tags:
   - weeknight
-work_box: yes | no | with-modification
-effort: low | medium | high
-servings: 4
-leftover_quality: poor | okay | good | excellent
+  - testing
 ---
 
 # Recipe Name
