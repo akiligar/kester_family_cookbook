@@ -31,7 +31,7 @@ nav:
       - Main Dishes:
           - recipes/main-dishes/index.md
           - Beef:
-              - Grilled Flank Steak with Chimichurri: recipes/main-dishes/grilled-flank-steak-chimichurri.md
+              - Grilled Flank Steak : recipes/main-dishes/grilled-flank-steak.md
               - Smash Burgers: recipes/main-dishes/smash-burgers.md
           - Chicken:
               - BBQ Chicken Stuffed Sweet Potatoes: recipes/main-dishes/bbq-chicken-stuffed-sweet-potatoes.md
