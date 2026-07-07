@@ -68,6 +68,7 @@ nav:
           - Metadata Standard: editorial/metadata-standard.md
           - Transformation Workflow: editorial/transformation-workflow.md
       - Change Log: editorial/change-log.md
+  - Reference:
       - reference/index.md
       - Pantry Staples: reference/pantry-staples.md
       - Equipment: reference/equipment.md
