@@ -1,60 +1,128 @@
-Project Documentation
+# Kester Family Cookbook Project Documentation
 
-This directory contains the internal documentation used to develop and maintain the Kester Family Cookbook.
+> **Purpose:** This directory contains the internal documentation used to develop, maintain, and improve the Kester Family Cookbook.
 
-Unlike the docs/ directory, the contents of project/ are not published to the cookbook website. These documents describe how the cookbook is built, organized, and maintained rather than how recipes are prepared.
+---
 
-Purpose
+## Overview
 
-The cookbook has two audiences:
+The repository is intentionally divided into two distinct areas:
 
-* Cookbook users — People looking for recipes, cooking instructions, and reference material.
-* Cookbook editors — People maintaining the cookbook, refining recipes, and improving the project over time.
+| Directory | Purpose | Published |
+|-----------|---------|:---------:|
+| `docs/` | Cookbook content, recipes, and editorial references | ✅ Yes |
+| `project/` | Internal project documentation and operational guidance | ❌ No |
 
-The docs/ directory serves cookbook users.
+The `docs/` directory contains the content that is published through MkDocs as the cookbook website.
 
-The project/ directory serves cookbook editors.
+The `project/` directory contains documentation for maintaining the cookbook itself, including architecture decisions, workflows, planning documents, and operational references.
 
-Directory Structure
+---
 
+## Directory Structure
+
+```text
 project/
 ├── architecture/
-│   Long-term design decisions and architecture revisions.
+│   ├── Architecture revisions
+│   └── Long-term design decisions
 │
 ├── workflow/
-│   Editorial and operational workflows, including recipe development,
-│   publishing, and AnyList processes.
+│   ├── Editorial workflows
+│   ├── Recipe development process
+│   └── Publishing workflows
 │
 ├── operations/
-│   GitHub, Cloudflare, deployment, and other technical documentation.
+│   ├── GitHub documentation
+│   ├── Cloudflare deployment
+│   └── Technical operations
 │
 └── planning/
-    Future ideas, backlog items, and project planning documents.
+    ├── Future enhancements
+    ├── Project backlog
+    └── Strategic planning
+```
 
-Editorial Philosophy
+---
 
-The goal of the Kester Family Cookbook is not simply to collect recipes.
+## Project Philosophy
 
-The goal is to build a permanent family cookbook that reflects how the Kester family actually cooks.
+The objective of this project is **not** to collect recipes.
 
-Recipes should become more accurate and more useful over time through testing, revision, and editorial review.
+The objective is to build and maintain a permanent cookbook that accurately reflects how the Kester family cooks.
 
-Whenever possible:
+Editorial decisions should prioritize:
 
-* Improve existing recipes before adding new ones.
-* Capture long-term editorial decisions.
-* Prefer consistency over novelty.
-* Treat GitHub as the authoritative source for cookbook content.
-* Keep operational documentation separate from the published cookbook.
+- Improving existing recipes before adding new ones.
+- Documenting long-term decisions rather than temporary discussions.
+- Maintaining consistency throughout the cookbook.
+- Treating GitHub as the authoritative source for all cookbook content.
+- Separating cookbook content from project management documentation.
 
-Relationship to the Published Site
+---
 
-Only documents under docs/ are intended for publication through MkDocs.
+## Publishing Policy
 
-Documents in project/ are internal references and should not be linked from the published cookbook navigation.
+### Published (`docs/`)
 
-Source of Truth
+- Recipes
+- Recipe indexes
+- Editorial references
+- Family Preferences
+- Change Log
+- Public cookbook documentation
 
-* GitHub is the permanent source of truth.
-* Cloudflare Pages publishes the cookbook website.
-* AnyList is the preferred cooking interface and should reflect the approved recipe versions maintained in GitHub.
+### Internal (`project/`)
+
+- Architecture documents
+- Workflow documentation
+- Operational procedures
+- Planning documents
+- Technical notes
+- Future design proposals
+
+---
+
+## Project Workflow
+
+```text
+VS Code
+    │
+    ▼
+Local Git Repository
+    │
+    ▼
+GitHub (Source of Truth)
+    │
+    ▼
+Cloudflare Pages
+    │
+    ▼
+Published Cookbook
+    │
+    ▼
+AnyList
+```
+
+---
+
+## Source of Truth
+
+| Component | Responsibility |
+|-----------|----------------|
+| **GitHub** | Permanent repository and authoritative cookbook source |
+| **MkDocs** | Static site generation |
+| **Cloudflare Pages** | Website hosting and deployment |
+| **AnyList** | Preferred cooking interface for approved recipes |
+
+---
+
+## Guiding Principle
+
+> **Every permanent decision should have a permanent home.**
+>
+> Recipes belong in the cookbook.
+>
+> Editorial guidance belongs in the published editorial documentation.
+>
+> Project operations belong in this directory.
