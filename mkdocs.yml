@@ -65,6 +65,7 @@ nav:
           - Recipe Standards: editorial/recipe-standards.md
           - Recipe Template: editorial/recipe-template.md
           - Recipe Lifecycle: editorial/recipe-lifecycle.md
+          - Recipe Style Guide: editorial/recipe-style-guide.md
           - Metadata Standard: editorial/metadata-standard.md
           - Transformation Workflow: editorial/transformation-workflow.md
       - Change Log: editorial/change-log.md
