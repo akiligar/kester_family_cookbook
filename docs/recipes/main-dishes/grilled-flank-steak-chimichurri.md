@@ -27,12 +27,18 @@ anylist:
   recipe_name: Grilled Flank Steak with Chimichurri
   notes: Version included in Schema.org description for AnyList reference.
 
-servings: 4
-prep_time: 00:20
-cook_time: 00:12
-total_time: 00:45
-effort: low
-make_ahead: partial
+## Recipe Information
+
+| | |
+|---|---|
+| **Servings** | 4, plus leftovers for 2–4 lunches |
+| **Prep Time** | 20 minutes |
+| **Cook Time** | 12 minutes |
+| **Total Time** | About 45 minutes |
+| **Protein** | Beef |
+| **Season** | Summer |
+| **Work Box** | Yes (with modification) |
+| **Planned Transformation** | Chimichurri Steak Salad |
 
 work_box: with-modification
 leftover_quality: excellent
